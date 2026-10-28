@@ -1,0 +1,14 @@
+{
+  "name": "blog-platform",
+  "version": "1.0.0",
+  "description": "Full-Stack MERN Editorial Blogging Platform with secure HTTP-only cookie JWT auth, post CRUD, comments, and moderation",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "test": "npm test --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "keywords": ["mern", "blog", "react", "express", "mongodb", "tailwind"],
+  "author": "",
+  "license": "ISC"
+}

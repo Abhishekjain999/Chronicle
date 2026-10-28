@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: 'Newsreader', 'Merriweather', Georgia, serif;
+  }
+}
+
+/* Custom editorial prose styling */
+.editorial-prose {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.85;
+}
+
+.editorial-prose h2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+  letter-spacing: -0.02em;
+}
+
+.editorial-prose h3 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.editorial-prose p {
+  margin-bottom: 1.4rem;
+}
+
+.editorial-prose ul, .editorial-prose ol {
+  margin-bottom: 1.4rem;
+  padding-left: 1.8rem;
+}
+
+.editorial-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.editorial-prose blockquote {
+  border-left: 4px solid #10b981;
+  padding-left: 1.25rem;
+  font-style: italic;
+  margin: 1.8rem 0;
+  color: #64748b;
+}
+
+.dark .editorial-prose blockquote {
+  color: #94a3b8;
+}
+
+.editorial-prose pre {
+  background: #18181b;
+  color: #f4f4f5;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.92rem;
+  margin: 1.6rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.editorial-prose code:not(pre code) {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+}
+
+.dark .editorial-prose code:not(pre code) {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.5);
+}
